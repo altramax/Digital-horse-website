@@ -82,6 +82,10 @@
   .second-width{
     width: 100%;
   }
+
+  .first-half{
+    width: 55%;
+  }
   
   .inp-pad {
     font-size: 1rem;
