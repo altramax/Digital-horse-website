@@ -70,9 +70,9 @@
     width: 80%;
   }
   
-.same-space-input {
-    display: flex;
-    justify-content: space-between;
+  .same-space-input {
+      display: flex;
+      justify-content: space-between;
   }
   
   .width {
@@ -101,6 +101,35 @@
     cursor: pointer;
   }
 
+  .lil-mar {
+    margin-bottom: 2rem;
+  } 
+  
+  .count{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .counter{
+    width: 9rem;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box{
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.2rem;
+    font-size: 1.5rem;
+    border: 1px solid #000;
+  }
+
+  .count-size{
+    font-size: 1.3rem;
+  }
   
 .contact-section {
     padding: 0 4rem;
