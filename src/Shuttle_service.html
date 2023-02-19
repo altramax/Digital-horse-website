@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Shuttle Service</title>
     <link rel="stylesheet" href="../css/shuttle_service.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,7 +58,7 @@
           <p class="first-formtext">
             Contact us through the information below or fill out the form below:
           </p>
-          <form action="">
+          <form>
             <div class="same-space-input">
               <div class="input-order width">
                 <label for="first-name">First Name <span id="firstname-asterisk">*</span></label>
@@ -71,7 +71,7 @@
             </div>
             <div class="input-order">
               <label for="phone-number">Phone Number <span id="phonenumber-asterisk">*</span></label>
-              <input class="inp-pad" type="tel" id="phone-number" />
+              <input class="inp-pad" type="tel" id="phone-number" placeholder="+234" />
             </div>
             <div class="input-order">
               <label for="email">Email Address <span id="email-asterisk">*</span></label>
@@ -98,35 +98,41 @@
                 <option value="adeola odeku">Adeola Odeku</option>
               </select>
             </div>
-            <div>
+            <div class="days lil-mar">
               <p class="fon">What Day(s) Whould Like To Ride With Us <span id="chooseday-asterisk">*</span></p>
-              <div class="checkbox-style">
-                <label for="sunday">Sunday</label>
-                <input type="checkbox" name="" id="sunday" />
+              <div>
+                <div class="checkbox-style">
+                  <label for="sunday">Sunday</label>
+                  <input type="checkbox" name="" id="sunday" />
+                </div>
+                <div class="checkbox-style">
+                  <label for="monday">Monday</label>
+                  <input type="checkbox" name="" id="monday" />
+                </div>
+                <div class="checkbox-style">
+                  <label for="tuesday">Tuesday</label>
+                  <input type="checkbox" name="" id="tuesday" />
+                </div>
               </div>
-              <div class="checkbox-style">
-                <label for="monday">Monday</label>
-                <input type="checkbox" name="" id="monday" />
+              <div>
+                <div class="checkbox-style">
+                  <label for="wednesday">Wednesday</label>
+                  <input type="checkbox" name="" id="wednesday" />
+                </div>
+                <div class="checkbox-style">
+                  <label for="thursday">Thursday</label>
+                  <input type="checkbox" name="" id="thursday" />
+                </div>
               </div>
-              <div class="checkbox-style">
-                <label for="tuesday">Tuesday</label>
-                <input type="checkbox" name="" id="tuesday" />
-              </div>
-              <div class="checkbox-style">
-                <label for="wednesday">Wednesday</label>
-                <input type="checkbox" name="" id="wednesday" />
-              </div>
-              <div class="checkbox-style">
-                <label for="thursday">Thursday</label>
-                <input type="checkbox" name="" id="thursday" />
-              </div>
-              <div class="checkbox-style">
-                <label for="friday">Friday</label>
-                <input type="checkbox" name="" id="friday" />
-              </div>
-              <div class="checkbox-style lil-mar">
-                <label for="saturday">Saturday</label>
-                <input type="checkbox" name="" id="saturday" />
+              <div>
+                <div class="checkbox-style">
+                  <label for="friday">Friday</label>
+                  <input type="checkbox" name="" id="friday" />
+                </div>
+                <div class="checkbox-style">
+                  <label for="saturday">Saturday</label>
+                  <input type="checkbox" name="" id="saturday" />
+                </div>
               </div>
             </div>
             <div>
@@ -180,5 +186,7 @@
            <img src="../images/twitter.png" alt="twitter" class="footer-icon">
         </div>
     </footer>
+
+    <script src="../JavaScript/shuttle_service.js"></script>
   </body>
 </html>

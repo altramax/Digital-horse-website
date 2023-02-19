@@ -90,6 +90,11 @@
   width: fit-content;
 }
 
+.days{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .same-space-input {
   display: flex;
   justify-content: space-between;
@@ -110,9 +115,10 @@
 .checkbox-style {
   font-size: 1.2rem;
   display: grid;
-  grid-template-columns: 8rem 1.5rem;
+  grid-template-columns: 7rem 1.5rem;
   gap: 0.5em;
   margin-bottom: 0.8rem;
+margin-right: 2rem;
 }
 
 .lil-mar {
