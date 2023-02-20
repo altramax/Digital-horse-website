@@ -58,23 +58,26 @@
           <p class="first-formtext">
             Contact us through the information below or fill out the form below:
           </p>
-          <form>
+          <form id="form" method="POST">
+            <!-- <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_subject" value="Request Shuttle Service"> -->
             <div class="same-space-input">
               <div class="input-order width">
-                <label for="first-name">First Name <span id="firstname-asterisk">*</span></label>
+                <label for="first-name">First Name <span id="firstname-asterisk" class="asterisk">*</span></label>
                 <input class="inp-pad" type="text" id="first-name" placeholder="e.g John" />
               </div>
               <div class="input-order width">
-                <label for="last-name">Last Name <span id="lastname-asterisk">*</span></label>
+                <label for="last-name">Last Name <span id="lastname-asterisk" class="asterisk">*</span></label>
                 <input class="inp-pad" type="text" id="last-name" placeholder="e.g Peter" />
               </div>
             </div>
             <div class="input-order">
-              <label for="phone-number">Phone Number <span id="phonenumber-asterisk">*</span></label>
+              <label for="phone-number">Phone Number <span id="phonenumber-asterisk" class="asterisk">*</span></label>
               <input class="inp-pad" type="tel" id="phone-number" placeholder="+234" />
             </div>
             <div class="input-order">
-              <label for="email">Email Address <span id="email-asterisk">*</span></label>
+              <label for="email">Email Address <span id="email-asterisk" class="asterisk">*</span></label>
               <input class="inp-pad"
                 type="email"
                 id="email"
@@ -82,8 +85,8 @@
               />
             </div>
             <div class="input-order">
-              <label for="route">Route <span id="route-asterisk">*</span></label>
-              <select name="route" id="" class="inp-pad">
+              <label for="route">Route <span id="route-asterisk" class="asterisk">*</span></label>
+              <select name="route" id="route" class="inp-pad">
                 <option value="">Click to Choose</option>
                 <option value="Berger to Victoria Island">
                   Berger to Victoria Island
@@ -91,60 +94,60 @@
               </select>
             </div>
             <div class="input-order">
-              <label for="pickup">Pickup <span id="pickup-asterisk">*</span></label>
-              <select name="pickup" id="" class="inp-pad">
+              <label for="pickup">Pickup <span id="pickup-asterisk" class="asterisk">*</span></label>
+              <select name="pickup" id="pickup" class="inp-pad">
                 <option value="">Click to Choose</option>
                 <option value="falomo">Falomo B/stop</option>
                 <option value="adeola odeku">Adeola Odeku</option>
               </select>
             </div>
             <div class="days lil-mar">
-              <p class="fon">What Day(s) Whould Like To Ride With Us <span id="chooseday-asterisk">*</span></p>
+              <p class="fon">What Day(s) Whould Like To Ride With Us <span id="chooseday-asterisk" class="asterisk">*</span></p>
               <div>
                 <div class="checkbox-style">
                   <label for="sunday">Sunday</label>
-                  <input type="checkbox" name="" id="sunday" />
+                  <input class="checkbox" type="checkbox" name="" id="sunday" />
                 </div>
                 <div class="checkbox-style">
                   <label for="monday">Monday</label>
-                  <input type="checkbox" name="" id="monday" />
+                  <input class="checkbox" type="checkbox" name="" id="monday" />
                 </div>
                 <div class="checkbox-style">
                   <label for="tuesday">Tuesday</label>
-                  <input type="checkbox" name="" id="tuesday" />
+                  <input class="checkbox" type="checkbox" name="" id="tuesday" />
                 </div>
               </div>
               <div>
                 <div class="checkbox-style">
                   <label for="wednesday">Wednesday</label>
-                  <input type="checkbox" name="" id="wednesday" />
+                  <input class="checkbox" type="checkbox" name="" id="wednesday" />
                 </div>
                 <div class="checkbox-style">
                   <label for="thursday">Thursday</label>
-                  <input type="checkbox" name="" id="thursday" />
+                  <input class="checkbox" type="checkbox" name="" id="thursday" />
                 </div>
               </div>
               <div>
                 <div class="checkbox-style">
                   <label for="friday">Friday</label>
-                  <input type="checkbox" name="" id="friday" />
+                  <input class="checkbox" type="checkbox" name="" id="friday" />
                 </div>
                 <div class="checkbox-style">
                   <label for="saturday">Saturday</label>
-                  <input type="checkbox" name="" id="saturday" />
+                  <input class="checkbox" type="checkbox" name="" id="saturday" />
                 </div>
               </div>
             </div>
             <div>
             <div class="input-order lil-mar">
-              <label for="stop-point" class="fon">Stop Point <span>*</span></label>
+              <label for="stop-point" class="fon">Stop Point <span id="stoppoint-Asterisk" class="asterisk">*</span></label>
               <select class="inp-pad" name="" id="stop-point">
                 <option value="">Click to Choose</option>
-                <option value="">Ojodu</option>
-                <option value="">Berger B/stop</option>
+                <option value="ojodu">Ojodu</option>
+                <option value="Berger B/stop">Berger B/stop</option>
               </select>
             </div>
-            <button class="submit">SUBMIT</button>
+            <button type="submit" id="submit" class="submit">SUBMIT</button>
           </form>
         </section>
       </div>
