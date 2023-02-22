@@ -90,7 +90,7 @@
   width: fit-content;
 }
 
-.days{
+.days {
   display: flex;
   flex-wrap: wrap;
 }
@@ -118,7 +118,7 @@
   grid-template-columns: 7rem 1.5rem;
   gap: 0.5em;
   margin-bottom: 0.8rem;
-margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .lil-mar {
@@ -130,8 +130,8 @@ margin-right: 2rem;
   padding-bottom: 0.5rem;
 }
 
-.asterisk{
-  color: #FF0000;
+.asterisk {
+  color: #ff0000;
 }
 
 .submit {
@@ -163,6 +163,7 @@ margin-right: 2rem;
 }
 
 .footer {
+  z-index: 1;
   padding: 0.5rem 4rem;
   background-color: #d9d9d9;
   display: flex;
@@ -174,4 +175,62 @@ margin-right: 2rem;
 
 .footer-icon {
   width: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  background: rgb(239, 248, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(239, 248, 255, 1) 0%,
+    rgba(200, 236, 255, 1) 56%,
+    rgb(121, 179, 255) 100%
+  );
+  color: #205ba9;
+  border-radius: 1rem;
+  width: 19rem;
+  position: fixed;
+  left: 40%;
+  top: 20%;
+  text-align: center;
+  padding: 1rem;
+  z-index: 4;
+}
+
+.modal-text-group {
+  margin-top: 1rem;
+}
+
+.modal-p {
+  padding-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.large-Text {
+  font-size: 2rem;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  background-color: #5a93dd;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  overflow-y: hidden;
+}
+
+.return-button {
+  margin: 1.5rem 0 1rem 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #205ba9;
+  color: #fff;
+  cursor: pointer;
 }

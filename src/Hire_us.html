@@ -24,145 +24,251 @@
       </div>
     </nav>
     <main>
-        <div class="container">
-            <div class="first-half">
-                <img src="../images/3411096.jpg" alt="" class="second-width">
-            </div>
-            <section class="shuttle-service-form">
-                <h2 class="main-headtext">RESERVATION  FORM</h2>
-                <p class="first-formtext">
-                  Contact us through the information below or fill out the form below:
-                </p>
-                <form>
-                    <div class="same-space-input">
-                        <div class="input-order width">
-                          <label for="first-name">First Name <span id="firstname-asterisk">*</span></label>
-                          <input class="inp-pad" type="text" id="first-name" placeholder="e.g John" />
-                        </div>
-                        <div class="input-order width">
-                          <label for="last-name">Last Name <span id="lastname-asterisk">*</span></label>
-                          <input class="inp-pad" type="text" id="last-name" placeholder="e.g Peter" />
-                        </div>
-                      </div>
-                      <div class="input-order">
-                        <label for="phone-number">Phone Number <span id="phonenumber-asterisk">*</span></label>
-                        <input class="inp-pad" type="tel" id="phone-number" placeholder="+234"/>
-                      </div>
-                      <div class="input-order">
-                        <label for="email">Email Address <span id="email-asterisk">*</span></label>
-                        <input class="inp-pad"
-                          type="email"
-                          id="email"
-                          placeholder="e.g John@gmail.com"
-                        />
-                      </div>
-                      <div class="input-order">
-                        <label for="billing-address">Billing Address <span id="billing-asterisk">*</span></label>
-                        <input class="inp-pad"
-                          type="text"
-                          id="billing-address"
-                          placeholder="No. 3 Jakande Ikeja"
-                        />
-                      </div>
-                      <div class="input-order">
-                        <label for="rental-purpose">Rental Purpose<span id="rental-asterisk">*</span></label>
-                        <input class="inp-pad"
-                          type="text"
-                          id="rental-purpose"
-                          placeholder="Add Answer Here"
-                        />
-                      </div>
-                      <div class="input-order width">
-                        <label for="chooseVehicle">Choose a Vehicle <span id="vehicle-asterisk">*</span></label>
-                        <select name="route" id="" class="inp-pad">
-                            <option value="">Click to Choose</option>
-                            <option value="">Hiace</option>
-                            <option value="">Coaster</option>
-                          </select>
-                      </div>
-                      <div class="input-order lil-mar">
-                        <p>How Many Vehicle?</p>
-                        <div class="count">
-                          <div class="counter">
-                            <div class="box">-</div>
-                            <div class="count-size">0</div>
-                            <div class="box">+</div>
-                            <p>Hiace</p>
-                          </div>
-                          <div class="counter">
-                            <div class="box">-</div>
-                            <div class="count-size">0</div>
-                            <div class="box">+</div>
-                            <p>Coaster</p>
-                          </div>  
-                        </div>
-                      </div>
-                      <div class="same-space-input">
-                        <div class="input-order width">
-                          <label for="Start-date">Start Date <span id="Startdate-asterisk">*</span></label>
-                          <input class="inp-pad" type="date" id="Start-date" placeholder="Select a Date"/>
-                        </div>
-                        <div class="input-order width">
-                          <label for="Pickup-time">Pickup Time <span id="pickup-asterisk">*</span></label>
-                          <input class="inp-pad" type="time" id="Pickup-time" placeholder="Select a Time" />
-                        </div>
-                      </div>
-                      <div class="input-order width">
-                        <label for="End-date">End Date <span id="Enddate-asterisk">*</span></label>
-                        <input class="inp-pad" type="date" id="End-date" placeholder="Select a Date"/>
-                      </div>
-                      <div class="input-order lil-mar">
-                        <label for="dropoff">Drop-Off Address <span id="dropoff-asterisk">*</span></label>
-                        <textarea name="" id="dropoff" cols="20" rows="5"></textarea>
-                      </div>
-                      <div class="input-order lil-mar">
-                        <label for="additional">Additional Details <span id="additional-asterisk">*</span></label>
-                        <textarea name="" id="additional" cols="20" rows="5"></textarea>
-                      </div>
-                      <button class="submit">SUBMIT</button>
-                </form>
-            </section> 
+      <div class="container">
+        <div class="first-half">
+          <img src="../images/3411096.jpg" alt="" class="second-width" />
         </div>
-        <section class="contact-section">
-            <div class="contact-info">
-                <img src="../images/office address.png" alt="office"  class="icon-size"/>
-                <div>
-                    <h4>OFFICE ADDRESS:</h4>
-                    <p>2, Adeyemo Akapo, Omole Phase 1, Ojodu Berger, Lagos.</p>
+        <section id="form" class="hire-us-form">
+          <h2 class="main-headtext">RESERVATION FORM</h2>
+          <p class="first-formtext">
+            Contact us through the information below or fill out the form below:
+          </p>
+          <form>
+            <div class="same-space-input">
+              <div class="input-order width">
+                <label for="first-name"
+                  >First Name
+                  <span id="firstname-asterisk" class="asterisk">*</span></label
+                >
+                <input
+                  class="inp-pad"
+                  type="text"
+                  id="first-name"
+                  placeholder="e.g John"
+                />
+              </div>
+              <div class="input-order width">
+                <label for="last-name"
+                  >Last Name
+                  <span id="lastname-asterisk" class="asterisk">*</span></label
+                >
+                <input
+                  class="inp-pad"
+                  type="text"
+                  id="last-name"
+                  placeholder="e.g Peter"
+                />
               </div>
             </div>
-            <div class="contact-info">
-                <img src="../images/email us.png" alt="email" class="icon-size" />
-              <div>
-                  <h4>EMAIL US:</h4>
-                  <p>Muyiwa.oriola@digitalhorselimited.com</p>
-                  <p>info@digitalhorselimited.com</p>
+            <div class="input-order">
+              <label for="phone-number"
+                >Phone Number
+                <span id="phonenumber-asterisk" class="asterisk">*</span></label
+              >
+              <input
+                class="inp-pad"
+                type="tel"
+                id="phone-number"
+                placeholder="08099999999"
+              />
+            </div>
+            <div class="input-order">
+              <label for="email"
+                >Email Address
+                <span id="email-asterisk" class="asterisk">*</span></label
+              >
+              <input
+                class="inp-pad"
+                type="email"
+                id="email"
+                placeholder="e.g John@gmail.com"
+              />
+            </div>
+            <div class="input-order">
+              <label for="billing-address"
+                >Billing Address
+                <span id="billing-asterisk" class="asterisk">*</span></label
+              >
+              <input
+                class="inp-pad"
+                type="text"
+                id="billing-address"
+                placeholder="No. 3 Jakande Ikeja"
+              />
+            </div>
+            <div class="input-order">
+              <label for="rental-purpose"
+                >Rental Purpose<span id="rental-asterisk" class="asterisk"
+                  >*</span
+                ></label
+              >
+              <input
+                class="inp-pad"
+                type="text"
+                id="rental-purpose"
+                placeholder="Add Answer Here"
+              />
+            </div>
+            <div class="input-order width">
+              <label for="chooseVehicle"
+                >Choose a Vehicle
+                <span id="vehicle-asterisk" class="asterisk">*</span></label
+              >
+              <select name="route" id="chooseVehicle" class="inp-pad">
+                <option value="">Click to Choose</option>
+                <option value="Hiace">Hiace</option>
+                <option value="Coaster">Coaster</option>
+              </select>
+            </div>
+            <div class="input-order lil-mar">
+              <label for="vehicle-count"
+                >How Many Vehicles<span
+                  id="vehicle-count-asterisk"
+                  class="asterisk"
+                  >*</span
+                ></label
+              >
+              <input type="text" id="vehicle-count" class="vehicle-count" />
+            </div>
+            <div class="same-space-input">
+              <div class="input-order width">
+                <label for="start-date"
+                  >Start Date
+                  <span id="startdate-asterisk" class="asterisk">*</span></label
+                >
+                <input
+                  class="inp-pad"
+                  type="date"
+                  id="start-date"
+                  placeholder="Select a Date"
+                />
+              </div>
+              <div class="input-order width">
+                <label for="Pickup-time"
+                  >Pickup Time
+                  <span id="pickup-time-asterisk" class="asterisk"
+                    >*</span
+                  ></label
+                >
+                <input
+                  class="inp-pad"
+                  type="time"
+                  id="pickup-time"
+                  placeholder="Select a Time"
+                />
               </div>
             </div>
-            <div class="contact-info">
-                <img src="../images/call us.png" alt="call" class="icon-size" />
-              <div>
-                  <h4>CALL US:</h4>
-                  <p>+234 806 769 7107</p>
-                  <p>+234 706 893 3519</p>
-              </div>
+            <div class="input-order width">
+              <label for="End-date"
+                >End Date
+                <span id="enddate-asterisk" class="asterisk">*</span></label
+              >
+              <input
+                class="inp-pad"
+                type="date"
+                id="end-date"
+                placeholder="Select a Date"
+              />
             </div>
-          </section>
+            <div class="input-order lil-mar">
+              <label for="pickup"
+                >Pick-Up Address
+                <span id="pick-up-asterisk" class="asterisk">*</span></label
+              >
+              <textarea name="" id="pickup" cols="20" rows="5"></textarea>
+            </div>
+            <div class="input-order lil-mar">
+              <label for="dropoff"
+                >Drop-Off Address
+                <span id="dropoff-asterisk" class="asterisk">*</span></label
+              >
+              <textarea name="" id="dropoff" cols="20" rows="5"></textarea>
+            </div>
+            <div class="input-order lil-mar">
+              <label for="additional"
+                >Additional Details
+                <span id="additional-asterisk" class="asterisk">*</span></label
+              >
+              <textarea name="" id="additional" cols="20" rows="5"></textarea>
+            </div>
+            <button id="submit" class="submit">SUBMIT</button>
+          </form>
+        </section>
+      </div>
+      <section class="contact-section">
+        <div class="contact-info">
+          <img
+            src="../images/office address.png"
+            alt="office"
+            class="icon-size"
+          />
+          <div>
+            <h4>OFFICE ADDRESS:</h4>
+            <p>2, Adeyemo Akapo, Omole Phase 1, Ojodu Berger, Lagos.</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <img src="../images/email us.png" alt="email" class="icon-size" />
+          <div>
+            <h4>EMAIL US:</h4>
+            <p>Muyiwa.oriola@digitalhorselimited.com</p>
+            <p>info@digitalhorselimited.com</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <img src="../images/call us.png" alt="call" class="icon-size" />
+          <div>
+            <h4>CALL US:</h4>
+            <p>+234 806 769 7107</p>
+            <p>+234 706 893 3519</p>
+          </div>
+        </div>
+      </section>
     </main>
-
-           
-            <footer class="footer">
-                <div>
-                  <p> Copyright © 2022 Digital Horse Limited </p>
-                  <p>Powered by Digital Horse Limited</p>
-                </div>
-                <div class="footer-links">
-                   <img src="../images/facebook.png" alt="facebook" class="footer-icon">
-                   <img src="../images/youtube.png" alt="youtube" class="footer-icon">
-                   <img src="../images/instagram.png" alt="instagram" class="footer-icon">
-                   <img src="../images/twitter.png" alt="twitter" class="footer-icon">
-                </div>
-            </footer>
-   <script src="../JavaScript/hire_us.js"></script>
+    <div id="overlay" class="overlay hidden"></div>
+    <section id="success-modal" class="modal hidden">
+      <img src="../images/logo.png" alt="logo" class="modal-logo" />
+      <div class="modal-text-group">
+        <p class="large-Text">Message sent Successfully</p>
+        <p class="modal-p">We Will get back to you in a bit</p>
+        <p class="modal-p">Thank you</p>
+        <button id="success-button" class="return-button">Continue</button>
+      </div>
+    </section>
+    <section id="failed-modal" class="modal hidden">
+      <img src="../images/logo.png" alt="logo" class="modal-logo" />
+      <div class="modal-text-group">
+        <p class="large-Text">Sending Failed</p>
+        <p class="modal-p">
+          Please Ensure All The Informations Provided Are Correct
+        </p>
+        <p class="modal-p"></p>
+        <button id="Failed-button" class="return-button">Continue</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div>
+        <p>Copyright © 2022 Digital Horse Limited</p>
+        <p>Powered by Digital Horse Limited</p>
+      </div>
+      <div class="footer-links">
+        <a href="http://facebook.com/digitalhorseltd"
+          ><img src="../images/facebook.png" alt="facebook" class="footer-icon"
+        /></a>
+        <a href="https://www.linkedin.com/company/digitalhorselimited/"
+          ><img src="../images/linkin.svg" alt="youtube" class="footer-icon"
+        /></a>
+        <a href="http://instagram.com/digitalhorseltd"
+          ><img
+            src="../images/instagram.png"
+            alt="instagram"
+            class="footer-icon"
+        /></a>
+        <a href="https://twitter.com/DigitalHorseltd"
+          ><img src="../images/twitter.png" alt="twitter" class="footer-icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="../JavaScript/hire_us.js"></script>
   </body>
 </html>

@@ -7,6 +7,11 @@ const route = document.getElementById("route");
 const pickup = document.getElementById("pickup");
 const days = document.querySelectorAll(".checkbox");
 const stopPoint = document.getElementById("stop-point");
+const successModal = document.getElementById("success-modal");
+const failedModal = document.getElementById("failed-modal");
+const overlay = document.getElementById("overlay");
+const BtnSuccess = document.getElementById("success-button");
+const BtnFailed = document.getElementById("Failed-button");
 
 const firstAsterisk = document.getElementById("firstname-asterisk");
 const lastAsterisk = document.getElementById("lastname-asterisk");
@@ -19,22 +24,23 @@ const stopPointAsterisk = document.getElementById("stoppoint-Asterisk");
 
 const submit = document.getElementById("submit");
 
-function init(){
-    firstName.value = "";
-    lastName.value = "";
-    phoneNumber.value = "";
-    email.value = "";
-    route.value = "";
-    pickup.value = "";
-    days.forEach(day => day.checked = false); 
-    stopPoint.value = "";
+// starting condition
+function init() {
+  firstName.value = "";
+  lastName.value = "";
+  phoneNumber.value = "";
+  email.value = "";
+  route.value = "";
+  pickup.value = "";
+  days.forEach((day) => (day.checked = false));
+  stopPoint.value = "";
 }
-init()
+
 
 // to change asterisk color
 function asteriskColor(element, asteriskName) {
   element.addEventListener("input", function () {
-    if (element.value.length > 0) {
+    if (element.value.length > 1) {
       asteriskName.style.color = "#00FF00";
     } else {
       asteriskName.style.color = "#FF0000";
@@ -61,20 +67,14 @@ email.addEventListener("input", function () {
 phoneNumber.addEventListener("input", function (e) {
   e.target.value = e.target.value.replace(/[^\d]/g, "").trim();
 
-//   to change color 
+  //   to change color
   phoneNumber.addEventListener("input", function () {
-    
-    
-    if ( phoneNumber.value.length > 0 && phoneNumber.value.length < 15 ) {
+    if (phoneNumber.value.length > 9 && phoneNumber.value.length < 15) {
       phoneAsterisk.style.color = "#00FF00";
     } else {
-     phoneAsterisk.style.color = "#FF0000";
+      phoneAsterisk.style.color = "#FF0000";
     }
   });
-
-//   to validate
- 
-  
 });
 
 // to get the selected days from the checkboxes and change asterisk color
@@ -100,19 +100,37 @@ days.forEach((day) => {
 
 // To Submit
 submit.addEventListener("click", function (e) {
-    e.preventDefault();
+  e.preventDefault();
   if (
-    firstName.value.length > 0 &&
-    lastName.value.length > 0 &&
-    phoneNumber.value.length > 0 &&
+    firstName.value.length > 1 &&
+    lastName.value.length > 1 &&
+    phoneNumber.value.length > 9 &&
+    phoneNumber.value.length < 15 &&
     email.value.includes("@") &&
-    route.value.length > 0 &&
-    pickup.value.length > 0 &&
+    route.value.length > 1 &&
+    pickup.value.length > 1 &&
     daysChoosen.length > 0 &&
-    stopPoint.value.length > 0
+    stopPoint.value.length > 1
   ) {
-    
-    console.log("checked out");
+    successModal.classList.remove("hidden")
+    overlay.classList.remove("hidden")
     init();
+  } else {
+    failedModal.classList.remove("hidden")
+    overlay.classList.remove("hidden")
   }
 });
+
+BtnFailed.addEventListener("click",function(){
+  failedModal.classList.add("hidden")
+    overlay.classList.add("hidden")   
+})
+
+BtnSuccess.addEventListener("click",function(){
+  successModal.classList.add("hidden")
+    overlay.classList.add("hidden")   
+    window.location.href = "../index.html"
+})
+
+
+

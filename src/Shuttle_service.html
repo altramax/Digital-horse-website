@@ -71,7 +71,7 @@
             </div>
             <div class="input-order">
               <label for="phone-number">Phone Number <span id="phonenumber-asterisk" class="asterisk">*</span></label>
-              <input class="inp-pad" type="tel" id="phone-number" placeholder="+234" />
+              <input class="inp-pad" type="tel" id="phone-number" placeholder="08099999999" />
             </div>
             <div class="input-order">
               <label for="email">Email Address <span id="email-asterisk" class="asterisk">*</span></label>
@@ -174,16 +174,35 @@
         </div>
       </section>
     </main>
+        <div id="overlay" class="overlay hidden"></div>
+        <section id="success-modal" class="modal hidden">
+             <img src="../images/logo.png" alt="logo" class="modal-logo">
+             <div class="modal-text-group">
+               <p class="large-Text">Message sent Successfully</p>
+               <p class="modal-p">We Will get back to you in a bit</p>
+               <p class="modal-p">Thank you</p>
+               <button id="success-button" class="return-button">Continue</button>
+             </div>
+        </section>
+        <section id="failed-modal" class="modal hidden">
+          <img src="../images/logo.png" alt="logo" class="modal-logo">
+          <div class="modal-text-group">
+            <p class="large-Text">Sending Failed</p>
+            <p class="modal-p">Please Ensure All The Informations Provided Are Correct</p>
+            <p class="modal-p"></p>
+            <button id="Failed-button" class="return-button">Continue</button>
+          </div>
+     </section>
     <footer class="footer">
         <div>
           <p> Copyright © 2022 Digital Horse Limited </p>
           <p>Powered by Digital Horse Limited</p>
         </div>
         <div class="footer-links">
-           <img src="../images/facebook.png" alt="facebook" class="footer-icon">
-           <img src="../images/youtube.png" alt="youtube" class="footer-icon">
-           <img src="../images/instagram.png" alt="instagram" class="footer-icon">
-           <img src="../images/twitter.png" alt="twitter" class="footer-icon">
+          <a href="http://facebook.com/digitalhorseltd"><img src="../images/facebook.png" alt="facebook" class="footer-icon"></a>
+           <a href="https://www.linkedin.com/company/digitalhorselimited/"><img src="../images/linkin.svg" alt="youtube" class="footer-icon"></a>
+           <a href="http://instagram.com/digitalhorseltd"><img src="../images/instagram.png" alt="instagram" class="footer-icon"></a>
+           <a href="https://twitter.com/DigitalHorseltd"><img src="../images/twitter.png" alt="twitter" class="footer-icon"></a>
         </div>
     </footer>
 
