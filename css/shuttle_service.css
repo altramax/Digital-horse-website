@@ -182,16 +182,10 @@
 }
 
 .modal {
-  background: rgb(239, 248, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(239, 248, 255, 1) 0%,
-    rgba(200, 236, 255, 1) 56%,
-    rgb(121, 179, 255) 100%
-  );
-  color: #205ba9;
+  background-image: linear-gradient(0deg, #9cd4eb, white);
   border-radius: 1rem;
-  width: 19rem;
+  width: 300px;
+  height: 400px;
   position: fixed;
   left: 40%;
   top: 20%;
@@ -224,13 +218,35 @@
   overflow-y: hidden;
 }
 
-.return-button {
+.modal-btn {
   margin: 1.5rem 0 1rem 0;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #205ba9;
   color: #fff;
   cursor: pointer;
 }
+
+.modal-logo{
+  padding-top: 1rem;
+  width: 4rem;
+}
+
+.success-modal{
+  color: #091729;
+}
+
+.btn-success{
+  background-color: #3bb3e2;
+}
+
+.failed-modal {
+  color: rgb(143, 0, 0);
+  background-image: linear-gradient(0deg, #ff5d5d, white);
+}
+
+.btn-failed{
+  background-color: rgb(255, 34, 34)
+}
+

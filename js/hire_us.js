@@ -191,7 +191,7 @@ submit.addEventListener("click", function (e) {
 });
 
 BtnFailed.addEventListener("click",function(){
-  failedModal.classList.add("hidden")
+    failedModal.classList.add("hidden")
     overlay.classList.add("hidden")   
 })
 
