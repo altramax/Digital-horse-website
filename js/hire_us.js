@@ -177,10 +177,6 @@ submit.addEventListener("click", function (e) {
     dropOff.value.length > 1 &&
     addInfo.value.length > 1
   ) {
-    // console.log(pickupTime.value);
-    // console.log(endDate.value);
-    // console.log(startDate.value);
-    // console.log("checked out");
     successModal.classList.remove("hidden")
     overlay.classList.remove("hidden")
     init();
